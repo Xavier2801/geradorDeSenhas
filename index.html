@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gerenciador de senhas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de senhas</h2>
+        <div class="result-container">
+            <span id="result"></span>
+
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Numero de caracteres</label>
+                <input type="number"class = "caixa__number" id="length" min='4' max='20' value='20' />
+            </div>
+            <div class="setting">
+                <label>Incluir letras maiúsculas</label> 
+                <input type="checkbox" class="botao__checked" id="uppercase" checked />
+            </div>
+            <div class="setting">
+                <label>Incluir letras minusculas</label> 
+                <input type="checkbox"class="botao__checked" id="lowercase" checked />
+            </div>
+            <div class="setting">
+                <label>Incluir numeros</label> 
+                <input type="checkbox"class="botao__checked" id="numbers" checked   />
+            </div>
+            <div class="setting">
+                <label>Incluir simbolos</label> 
+                <input type="checkbox" class="botao__checked" id="symbols" checked  />
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Gerar a senha 
+        </button>
+    </div>
+
+
+    <div class="social-panel-container">
+        <div class="social-panel">
+            <p>
+                Criado por Ruan e Samuel
+            </p>
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h4> <- Ruan | Samuel -></h4>
+            <ul>
+                <li>
+                    <a href="https://github.com/Xavier2801" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ruan-xavier-desenvolvedor" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="https://github.com/SamuelChaves16" target="_blank">
+                        <i class=" fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samuel-chaves-588746235/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <button class="floating-btn">
+        Clique aqui!
+    </button>
+    
+    
+    
+    
+
+    <script src='main.js'></script>
+</body>
+</html>
+
+
